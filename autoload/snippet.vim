@@ -9,9 +9,7 @@ function! s:try_insert(skel)
 endfunction
 
 function! ultiProjection#InsertSkeleton() abort
-  let filename = expand('%')
-
-  if !(line('$') == 1 && getline('$') == '') || filereadable(filename)
+  if !(line('$') == 1 && getline('$') == '') || filereadable(expand('%'))
     return
   endif
 
