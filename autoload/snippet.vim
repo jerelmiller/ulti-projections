@@ -8,7 +8,7 @@ function! s:try_insert(skel)
   return g:ulti_expand_res
 endfunction
 
-function! ultiProjection#InsertSkeleton() abort
+function! snippet#InsertSkeleton() abort
   if !(line('$') == 1 && getline('$') == '') || filereadable(expand('%'))
     return
   endif

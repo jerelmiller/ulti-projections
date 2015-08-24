@@ -2,8 +2,8 @@ if !exists('g:did_plugin_ultisnips')
   finish
 endif
 
-augroup ultiProjections
+augroup snippets
   autocmd!
-  autocmd User ProjectionistActivate silent! call ultiProjection#InsertSkeleton()
-  autocmd BufNewFile * silent! call ultiProjection#InsertSkeleton()
+  autocmd User ProjectionistActivate silent! call snippet#InsertSkeleton()
+  autocmd BufNewFile * silent! call snippet#InsertSkeleton()
 augroup END
