@@ -4,6 +4,6 @@ endif
 
 augroup ultiProjections
   autocmd!
-  autocmd User ProjectionistActivate silent! call snippet#InsertSkeleton()
-  autocmd BufNewFile * silent! call snippet#InsertSkeleton()
+  autocmd User ProjectionistActivate silent! call ultiProjection#InsertSkeleton()
+  autocmd BufNewFile * silent! call ultiProjection#InsertSkeleton()
 augroup END

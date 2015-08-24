@@ -8,7 +8,7 @@ function! s:try_insert(skel)
   return g:ulti_expand_res
 endfunction
 
-function! snippet#InsertSkeleton() abort
+function! ultiProjection#InsertSkeleton() abort
   let filename = expand('%')
 
   if !(line('$') == 1 && getline('$') == '') || filereadable(filename)
